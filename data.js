@@ -44,15 +44,15 @@ window.DATA = {
   escalaAcuerdo: ["Nada", "Poco", "A veces", "Bastante", "Totalmente"],
 
   afirmaciones: [
-    { dim: "D", texto: "En un proyecto, suelo ser quien marca el rumbo y los plazos." },
+    { dim: "D", texto: "En un proyecto, suelo ser quien decide el rumbo y fija los plazos." },
     { dim: "I", texto: "Me resulta fácil explicar algo complejo a alguien que no sabe del tema." },
-    { dim: "S", texto: "Prefiero un equipo estable a cambiar de grupo a menudo." },
+    { dim: "S", texto: "Prefiero trabajar siempre con las mismas personas que cambiar de equipo con frecuencia." },
     { dim: "C", texto: "Reviso los detalles dos veces antes de dar algo por terminado." },
     { dim: "D", texto: "Los retos difíciles y la presión me motivan más que me agobian." },
-    { dim: "I", texto: "Disfruto conociendo gente nueva en congresos, eventos o clases." },
+    { dim: "I", texto: "Disfruto conociendo gente nueva en congresos y eventos profesionales." },
     { dim: "S", texto: "Termino lo que empiezo, aunque sea largo y repetitivo." },
     { dim: "C", texto: "Necesito entender el porqué de las cosas antes de aplicarlas." },
-    { dim: "D", texto: "Tomo decisiones rápido, aunque no tenga toda la información." },
+    { dim: "D", texto: "Prefiero decidir y ajustar sobre la marcha que esperar a tenerlo todo claro." },
     { dim: "I", texto: "Se me da bien convencer a otras personas de una idea." },
     { dim: "S", texto: "Me siento a gusto con rutinas y procedimientos bien definidos." },
     { dim: "C", texto: "Disfruto analizando datos hasta encontrar el patrón." }
@@ -78,7 +78,7 @@ window.DATA = {
     { texto: "Tu grupo consigue financiación para un proyecto nuevo. ¿Qué parte te pedirías?", opciones: [
       { entorno: "lab", texto: "Poner a punto los experimentos" },
       { entorno: "datos", texto: "Diseñar cómo se van a analizar los datos" },
-      { entorno: "personas", texto: "Coordinar a los socios para que todo el mundo reme a una" },
+      { entorno: "personas", texto: "Coordinar a los demás grupos y personas para que todo avance a la vez" },
       { entorno: "docum", texto: "Preparar los permisos y la documentación para que el proyecto sea impecable" } ] },
     { texto: "Sale al mercado un tratamiento en el que has trabajado. ¿Qué papel te ilusionaría más?", opciones: [
       { entorno: "produccion", texto: "Asegurar que se fabrica bien a gran escala" },
@@ -86,10 +86,10 @@ window.DATA = {
       { entorno: "ensenanza", texto: "Formar al personal que tendrá que aplicarlo" },
       { entorno: "docum", texto: "Conseguir que las autoridades sanitarias lo aprueben" } ] },
     { texto: "Vas a un congreso científico. ¿Qué harías con más gusto?", opciones: [
-      { entorno: "comunic", texto: "Dar una charla abierta al público general" },
-      { entorno: "ensenanza", texto: "Impartir un taller práctico para estudiantes" },
-      { entorno: "datos", texto: "Presentar un análisis original con tus propios datos" },
-      { entorno: "personas", texto: "Hacer contactos para futuros proyectos y colaboraciones" } ] },
+      { entorno: "comunic", texto: "Contar tu trabajo al público general en una charla abierta" },
+      { entorno: "ensenanza", texto: "Dar un taller práctico a estudiantes" },
+      { entorno: "datos", texto: "Presentar un análisis tuyo con tus propios datos" },
+      { entorno: "personas", texto: "Conocer a gente para futuros proyectos y colaboraciones" } ] },
     { texto: "Una semana de trabajo ideal incluiría sobre todo…", opciones: [
       { entorno: "campo", texto: "Salidas para tomar muestras en la naturaleza" },
       { entorno: "lab", texto: "Horas en el laboratorio con un experimento que por fin funciona" },
