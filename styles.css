@@ -381,3 +381,11 @@ button.cartel:hover, .cartel[aria-expanded="true"] { background: #F9D9AE; }
   .panel-claro > .firma { position: absolute; left: 0; right: 0; bottom: 18px; margin: 0; }
   .portada-relato > .firma { position: static; margin-top: 4px; }
 }
+
+.firma-red { display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 18px; }
+.firma-red-titulo { font-family: var(--serif); font-style: italic; font-size: 14px; color: #8A93A6; margin: 0; }
+.firma-red-enlaces { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+.firma-red-enlaces a { font-family: var(--sans); font-size: 14px; font-weight: 500; color: inherit; text-decoration: none; padding: 8px 14px; border: 1px solid var(--linea); border-radius: 999px; min-height: 36px; display: inline-flex; align-items: center; }
+.firma-red-enlaces a:hover, .firma-red-enlaces a:focus-visible { border-color: var(--acento); color: var(--acento); }
+.firma-red .firma { margin-top: 0; }
+@media (min-width: 900px) { .panel-claro > .firma-red { position: absolute; left: 0; right: 0; bottom: 18px; margin: 0; } .portada-relato > .firma-red { position: static; margin-top: 12px; } }
