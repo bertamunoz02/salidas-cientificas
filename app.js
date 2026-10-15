@@ -24,6 +24,7 @@
   const PARTE = { carrera: 1, afirmacion: 2, situacion: 3 };
   const MARCA = "Con B de Biología";
   const FIRMA = `<p class="firma">© ${new Date().getFullYear()} ${MARCA}</p>`;
+  const FIRMA_RED = `<div class="firma-red"><p class="firma-red-titulo">Más en ${MARCA}</p><nav class="firma-red-enlaces" aria-label="Con B de Biología"><a href="https://bertamunoz02.github.io/blog/" target="_blank" rel="noopener">Blog</a><a href="https://www.instagram.com/bertamunoz_02/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@bertamunoz_02" target="_blank" rel="noopener">TikTok</a></nav>${FIRMA}</div>`;
   const NOMBRE_PARTE = { 1: "Tu carrera", 2: "Cómo eres", 3: "Cómo trabajarías" };
 
   let estado;
@@ -152,7 +153,7 @@
             <p>Pero la ciencia abre muchísimas más puertas: industria, regulación, hospitales, datos, divulgación. Este test nace para eso, para ayudarte a descubrir cuáles encajan contigo antes de decidir.</p>
           </div>
           <button class="boton" data-accion="empezar" data-foco>Empezar el test <span class="boton-nota">20 preguntas</span> ${ICONO_SIGUIENTE}</button>
-          ${FIRMA}
+          ${FIRMA_RED}
         </section>
       </div>`;
   }
@@ -278,7 +279,7 @@
               <button class="boton grande" data-accion="siguiente">Ver tus salidas ${ICONO_SIGUIENTE}</button>
               <button class="boton grande secundario" data-accion="compartir">Compartir mi perfil</button>
             </div>
-            ${FIRMA}
+            ${FIRMA_RED}
           </div>
         </section>
       </div>`;
@@ -401,7 +402,7 @@
               <button class="boton grande secundario" data-accion="reiniciar">Repetir el test</button>
               <button class="enlace" data-accion="atras">${ICONO_ATRAS} Volver a tus salidas</button>
             </div>
-            ${FIRMA}
+            ${FIRMA_RED}
           </div>
         </section>
       </div>`;
