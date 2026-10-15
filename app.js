@@ -141,7 +141,7 @@
     return `
       <div class="pagina portada">
         <section class="panel-oscuro">
-          <div class="barra"><span class="marca">Salidas científicas</span><span class="espacio"></span><span class="sello">un test de <b>${MARCA}</b></span></div>
+          <div class="barra"><span class="marca">${MARCA}</span><span class="espacio"></span><span class="sello">test de <b>salidas científicas</b></span></div>
           <div class="cuerpo-pregunta"><h1 class="portada-titulo">¿Qué salida científica encaja contigo?</h1></div>
           <div class="mural" aria-hidden="true">${filas.map(franja).join("")}</div>
         </section>
@@ -172,16 +172,16 @@
     };
     return `
     <svg class="ilustracion" viewBox="0 0 300 300" role="img" aria-label="Un poste en un cruce de caminos con carteles que señalan hacia laboratorio, industria, hospital, aula, divulgación y otras salidas">
-      <ellipse cx="150" cy="282" rx="120" ry="12" fill="#E3E9F8"/>
-      <path d="M40 300 C90 268 120 262 150 262 C180 262 210 268 260 300" fill="none" stroke="#C9D5F4" stroke-width="2" stroke-dasharray="2 9" stroke-linecap="round"/>
+      <ellipse cx="150" cy="282" rx="120" ry="12" fill="#F3DCE2"/>
+      <path d="M40 300 C90 268 120 262 150 262 C180 262 210 268 260 300" fill="none" stroke="#E6C9D2" stroke-width="2" stroke-dasharray="2 9" stroke-linecap="round"/>
       <rect x="143" y="34" width="14" height="250" rx="3" fill="#E8D9C4" stroke="#131B2E" stroke-width="2.5"/>
       <circle cx="150" cy="30" r="9" fill="#131B2E"/>
-      ${cartel(48, 1, "Laboratorio", "#2A4FB0", -4)}
-      ${cartel(88, -1, "Industria", "#0F766E", 3)}
-      ${cartel(128, 1, "Hospital", "#7A2E8E", 5)}
-      ${cartel(168, -1, "Aula", "#C2410C", -3)}
-      ${cartel(208, 1, "Divulgación", "#B4235A", -2)}
-      <g font-family="Newsreader, Georgia, serif" font-style="italic" fill="#5A6377" font-size="38">
+      ${cartel(48, 1, "Laboratorio", "#1E2A4A", -4)}
+      ${cartel(88, -1, "Industria", "#2F5D48", 3)}
+      ${cartel(128, 1, "Hospital", "#B04468", 5)}
+      ${cartel(168, -1, "Aula", "#B5532F", -3)}
+      ${cartel(208, 1, "Divulgación", "#8F3555", -2)}
+      <g font-family="Newsreader, Georgia, serif" font-style="italic" fill="#6B7369" font-size="38">
         <text x="40" y="70">?</text><text x="252" y="190" font-size="28">?</text><text x="56" y="250" font-size="24">?</text>
       </g>
     </svg>`;
@@ -432,7 +432,7 @@
   // ---------- COMPARTIR ----------
   const urlTest = () => location.href.split("#")[0];
   const textoCompartir = () => `He hecho el test de salidas científicas y mi perfil profesional es «${estado.resultado.arquetipo.nombre}». ¿Qué salida científica encaja contigo?`;
-  const COLOR_CLARO = { D: "#F2895B", I: "#F27BA8", S: "#4FC9B4", C: "#86A7F7" };
+  const COLOR_CLARO = { D: "#F2A37E", I: "#F0A6BB", S: "#8FC1A8", C: "#A9B6DA" };
   let historia = null; // { blob, url }
 
   function envolver(ctx, texto, ancho) {
@@ -466,7 +466,7 @@
     g = c.createRadialGradient(120, 1750, 0, 120, 1750, 900);
     g.addColorStop(0, "rgba(85,39,106,.7)"); g.addColorStop(1, "rgba(19,27,46,0)");
     c.fillStyle = g; c.fillRect(0, 0, W, H);
-    ["#C2410C", "#B4235A", "#0F766E", "#1D4ED8"].forEach((col, i) => { c.fillStyle = col; c.fillRect(i * W / 4, 0, W / 4, 16); });
+    ["#B5532F", "#B04468", "#2F5D48", "#A9B6DA"].forEach((col, i) => { c.fillStyle = col; c.fillRect(i * W / 4, 0, W / 4, 16); });
 
     c.textBaseline = "alphabetic";
     c.fillStyle = "rgba(255,255,255,.9)"; c.font = `600 44px ${SERIF}`; c.fillText("Salidas científicas", M, 150);
@@ -497,7 +497,7 @@
     y += 8;
     r.top.slice(0, 3).forEach((sal, k) => {
       y += 64;
-      c.font = `italic 500 58px ${SERIF}`; c.fillStyle = "#7ED3C2"; c.fillText(String(k + 1), M, y + 4);
+      c.font = `italic 500 58px ${SERIF}`; c.fillStyle = "#F0A6BB"; c.fillText(String(k + 1), M, y + 4);
       c.font = `500 46px ${SERIF}`; c.fillStyle = "#ffffff";
       const lineas = envolver(c, sal.nombre, W - 2 * M - 190).slice(0, 2);
       lineas.forEach((l, j) => c.fillText(l, M + 70, y + j * 54));
