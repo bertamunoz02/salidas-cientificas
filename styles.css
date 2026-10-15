@@ -391,3 +391,10 @@ button.cartel:hover, .cartel[aria-expanded="true"] { background: #F9D9AE; }
 .firma-red-enlaces a:hover, .firma-red-enlaces a:focus-visible { border-color: var(--acento); color: var(--acento); }
 .firma-red .firma { margin-top: 0; }
 @media (min-width: 900px) { .panel-claro > .firma-red { position: absolute; left: 0; right: 0; bottom: 18px; margin: 0; } .portada-relato > .firma-red { position: static; margin-top: 12px; } }
+
+@media (min-width: 900px) {
+  .relato { gap: 20px; line-height: 1.72; }
+  .relato-grande { line-height: 1.32; }
+  .portada-relato { gap: 22px; justify-content: safe center; }
+  .portada-relato .ilustracion { flex-shrink: 0; max-width: 150px; }
+}
